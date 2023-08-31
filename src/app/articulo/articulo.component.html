@@ -1,0 +1,14 @@
+<div>
+  <h1>{{articulo.titulo}}</h1>
+  <app-seccion [tituloSeccion]="articulo.tituloSeccion" [contenido]="articulo.contenido"></app-seccion>
+  <app-enlace [enlace]="articulo.enlace"></app-enlace>
+  <div>
+    <p [class.elemento-like]="likes > 0" >{{likes}} personas que les gusta  </p>
+    <p *ngIf="likes > 0" class="elemento-like">Te gusta este articulo</p>
+    <p [class.elemento-menos]="menos > 0" >{{menos}} personas que no les gusta </p>
+    <p *ngIf="menos > 0" class="elemento-menos">no te gusta este articulo?</p>
+  </div>
+  
+  <button (click)="like()">+</button>
+  <button (click)="meno()">-</button>
+  </div>

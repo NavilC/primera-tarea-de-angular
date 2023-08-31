@@ -1,0 +1,10 @@
+.elemento-like{
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+  }
+  .elemento-menos{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+  }
